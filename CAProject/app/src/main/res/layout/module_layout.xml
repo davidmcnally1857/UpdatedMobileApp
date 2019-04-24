@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="20dp"
+    card_view:cardElevation="1dp"
+    card_view:contentPadding="10dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardBackgroundColor="@color/colorLightGray"
+    >
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:id="@+id/nameOfModule"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:fontFamily="sans-serif-black"/>
+       <TextView
+           android:id="@+id/nameOfCourse"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="44dp"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:id="@+id/avatar"/>
+           <TextView
+               android:id="@+id/lecturer"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="1.0"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/start"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight=".5"/>
+
+
+           <TextView
+               android:id="@+id/end"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight=".5"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
